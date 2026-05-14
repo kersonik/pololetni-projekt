@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superpočítač</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">&#9776; Menu</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="historie.html">1. Historie</a></li>
+                    <li><a href="hardware.html">2. Hardware</a></li>
+                    <li><a href="software.html">3. Software</a></li>
+                    <li><a href="site.html">4. Sítě</a></li>
+                    <li><a href="ai.html">5. AI</a></li>
+                    <li><a href="super.html" class="active">6. Superpočítač</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>Kapitola 6: Superpočítač</h1>
+            <p>Superpočítač je velmi výkonný počítač, dnes nejčastěji tvořený clusterem 
+                propojených běžných počítačů s vysokorychlostní sítí. V minulosti patřily 
+                mezi nejrychlejší superpočítače Sunway TaihuLight, Summit a japonský Fugaku. 
+                Od roku 2022 je nejvýkonnějším a zároveň nejúspornějším superpočítačem Frontier, 
+                který dosahuje výkonu přes 1 exaflops. Mezi významné projekty patří také gridový 
+                cluster Folding@home. V roce 2025 byl spuštěn nejrychlejší superpočítač v Evropě 
+                v německém Jülichu.
+            </p>
+
+            <figure>
+                <img src="img/karolina.jpg" alt="Superpočítač" width="600">
+            </figure>
+
+            <h2>Charakteristika</h2>
+            <ul>
+                <li>Neexistuje přesná hranice, od kdy je počítač považován za superpočítač; výkon se měří v jednotkách FLOPS a jejich násobcích (např. TFLOPS).</li>
+                <li>Nejrozšířenějším operačním systémem superpočítačů je Linux a další unixové systémy díky své otevřenosti.</li>
+                <li>Superpočítače slouží k řešení velmi výpočetně náročných úloh, jako je fyzikální modelování, předpověď počasí, výzkum genomu či kryptoanalýza.</li>
+                <li>Využívají se téměř ve všech vědních oborech k tvorbě a testování složitých modelů.</li>
+            </ul>
+
+            <h2>Architektura moderních superpočítačů</h2>
+            <ul>
+                <li>Moderní superpočítače jsou tvořeny clustery běžných počítačů propojených vysokorychlostní sítí, což je levnější než jeden specializovaný stroj.</li>
+                <li>Nejvýkonnější superpočítače využívají architekturu MIMD clusterů s procesory typu SIMD, které se liší počtem jednotek, procesorů a paralelních instrukcí.</li>
+                <li>Výpočty probíhají na multiprocesorových systémech využívajících technologie SMP a NUMA.</li>
+                <li>Pro zvýšení výkonu a efektivity se často používají také grafické procesory (GPGPU).</li>
+            </ul>
+
+            <h2>Distribuovaný výpočet</h2>
+            <ul>
+                <li>Superpočítač může být nahrazen i distribuovaným výpočtem, kdy jsou propojeny běžné osobní počítače přes internet.</li>
+                <li>Tento přístup je vhodný pro úlohy, které lze snadno paralelizovat a nevyžadují rychlou komunikaci mezi uzly.</li>
+                <li>Mezi známé projekty patří SETI@home a platforma BOINC, využívající volný výpočetní výkon počítačů.</li>
+                <li>Projekt Folding@home během pandemie covidu-19 dosáhl výkonu přes 1 EFLOPS, čímž překonal výkon nejvýkonnějších superpočítačů.</li>
+            </ul>
+
+            <h2>Superpočítače se speciálním určením</h2>
+            <ul>
+                <li><strong>Deep Blue:</strong> vytvořen pro hraní šachů, jako první stroj porazil v této hře člověka (Garryho Kasparova)</li>
+                <li><strong>GRAPE:</strong> vytvořen pro úlohy astrofyziky a molekulární dynamiky</li>
+                <li><strong>Deep Crack:</strong> vytvořen k prolomení šifry DES</li>
+            </ul>
+
+            <aside class="external-links">
+                <h3>Zdroje:</h3>
+                <a href="https://cs.wikipedia.org/wiki/Superpočítač"target="_blank">Wikipedie: Superpočítač</a>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Josef Šumšal | IT1 </p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

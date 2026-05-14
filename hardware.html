@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">&#9776; Menu</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="historie.html">1. Historie</a></li>
+                    <li><a href="hardware.html" class="active">2. Hardware</a></li>
+                    <li><a href="software.html">3. Software</a></li>
+                    <li><a href="site.html">4. Sítě</a></li>
+                    <li><a href="ai.html">5. AI</a></li>
+                    <li><a href="super.html">6. Superpočítač</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>Kapitola 2: Počítačový Hardware</h1>
+            <p>Hardware označuje veškeré fyzicky existující technické vybavení počítače na rozdíl od dat a programů
+                (označovaných jako software).</p>
+
+            <figure>
+                <img src="img/hardware.jpg" alt="Základní deska a procesor" width="600">
+            </figure>
+
+            <h1>komponenty</h1>
+
+            <h2>Procesor (CPU)</h2>
+            <ul>
+                <li><strong>Definice:</strong> základní součást počítače vykonávající strojový kód spuštěného programu.
+                </li>
+                <li><strong>Hardware:</strong> složitý sekvenční integrovaný obvod umístěný na základní desce.</li>
+            </ul>
+
+            <h2>Grafická karta</h2>
+            <ul>
+                <li><strong>Funkce:</strong> stará se o grafické výpočty a zobrazení obrazu na monitoru.</li>
+                <li><strong>Připojení:</strong> většinou přes PCI-Express patici, nebo je integrována na základní desce.
+                </li>
+            </ul>
+
+            <h2>Paměť RAM</h2>
+            <ul>
+                <li><strong>Charakteristika:</strong> paměť s přímým přístupem k libovolné části dat v konstantním čase.
+                </li>
+                <li><strong>Druhy:</strong> zahrnují běžné operační paměti (SDRAM, DDR1–DDR5) a grafické paměti (GDDR).
+                </li>
+            </ul>
+
+            <h2>Pevný disk</h2>
+            <ul>
+                <li><strong>Účel:</strong> nevolatilní zařízení pro dočasné nebo trvalé uchovávání většího množství dat.
+                </li>
+                <li><strong>Technologie:</strong> využívá buď magnetickou indukci (HDD), nebo flash paměť (SSD).</li>
+            </ul>
+
+            <h2>Základní deska</h2>
+            <ul>
+                <li><strong>Funkce:</strong> propojuje součástky do fungujícího celku a distribuuje elektrické napájení.
+                </li>
+                <li><strong>Obsah:</strong> nese patice pro komponenty, BIOS pro start počítače a čipovou sadu.</li>
+                <li><strong>Chipset:</strong> rozhoduje o tom, jaký procesor a operační paměť lze k desce připojit.</li>
+            </ul>
+
+            <aside class="external-links">
+                <h3>Zdroje:</h3>
+                <a href="https://cs.wikipedia.org/wiki/Hardware" target="_blank">Wikipedie: Hardware</a>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Josef Šumšal | IT1 </p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

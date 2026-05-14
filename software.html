@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">&#9776; Menu</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="historie.html">1. Historie</a></li>
+                    <li><a href="hardware.html">2. Hardware</a></li>
+                    <li><a href="software.html" class="active">3. Software</a></li>
+                    <li><a href="site.html">4. Sítě</a></li>
+                    <li><a href="ai.html">5. AI</a></li>
+                    <li><a href="super.html">6. Superpočítač</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>Kapitola 3: Software a OS</h1>
+            <p>Software (též česky programové vybavení je v informatice sada všech počítačových programů používaných v
+                počítači, které provádějí nějakou činnost. Software lze rozdělit na systémový software, který zajišťuje
+                chod samotného počítače a jeho styk s okolím a na aplikační software, se kterým buď pracuje uživatel
+                počítače nebo zajišťuje řízení nějakého stroje..</p>
+
+            <figure>
+                <img src="img/software.jpg" alt="kali" width="600">
+            </figure>
+
+            <h2>Software a data</h2>
+            <ul>
+                <li><strong>Definice software:</strong> v nejširším slova smyslu se jedná o vše, co v počítači není
+                    fyzickým
+                    hardwarem; tento pojem tak může zahrnovat nejen spustitelné programy, ale i samotná data.</li>
+                <li><strong>Povaha dat:</strong> data (např. obrázky, textové dokumenty) obvykle neobsahují strojové
+                    instrukce pro procesor, avšak hranice mezi nimi a programem může být nejasná, například u HTML
+                    stránek
+                    obsahujících skripty (JavaScript, PHP) nebo u komprimovaných ZIP souborů.</li>
+            </ul>
+
+            <h2>Škodlivý software</h2>
+            <ul>
+                <li><strong>Nežádoucí činnost:</strong> software se může chovat nesprávně buď kvůli nezamýšleným
+                    programátorským chybám, nebo proto, že byl jako škodlivý přímo navržen.</li>
+                <li><strong>Druhy hrozeb:</strong> mezi úmyslně vytvořený škodlivý software (malware) patří počítačové
+                    viry,
+                    spyware či trojské koně, které vznikají z nečestných úmyslů tvůrců.</li>
+                <li><strong>Příčiny úspěšných útoků:</strong> tvůrci malwaru zneužívají bezpečnostních chyb v aplikacích
+                    (prohlížeče, e-mailové klienty) a operačních systémech, nebo spoléhají na neznalost uživatele (tzv.
+                    sociální inženýrství).</li>
+                <li><strong>Obrana:</strong> protože běžný uživatel často nemá technické znalosti k rozpoznání hrozby,
+                    je
+                    nutné používat ochranné nástroje, jako jsou antivirové programy a antispyware, které se snaží
+                    škodlivý
+                    kód eliminovat.</li>
+            </ul>
+
+            <aside class="external-links">
+                <h3>Zdroje:</h3>
+                <a href="https://cs.wikipedia.org/wiki/Software" target="_blank">Wikipedie: Software</a>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Josef Šumšal | IT1 </p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

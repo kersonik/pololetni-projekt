@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvod</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">&#9776; Menu</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Úvod</a></li>
+                    <li><a href="historie.html">1. Historie</a></li>
+                    <li><a href="hardware.html">2. Hardware</a></li>
+                    <li><a href="software.html">3. Software</a></li>
+                    <li><a href="site.html">4. Sítě</a></li>
+                    <li><a href="ai.html">5. AI</a></li>
+                    <li><a href="super.html">6. Superpočítač</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>Programy</h1>
+            <p><strong>Počítačový program</strong> (též jen program, obecně pak software) je v informatice
+                <strong>posloupnost instrukcí</strong> (ne nutně strojových instrukcí), která popisuje realizaci dané
+                úlohy počítačem. Aby počítač mohl vykonávat nějakou činnost, potřebuje mít ve své operační paměti
+                alespoň jeden program. V současné době je v počítači základním programem <strong>jádro</strong>, které
+                řídí jeho chod a uživatel pak pracuje s aplikačním softwarem.</p>
+
+            <h1>Data</h1>
+            <p>Data jsou v informatice údaje zaznamenané v <strong>digitální</strong> (číselné) podobě určené k
+                počítačovému zpracování. Data (např. číslo, text, obrázek, zvuk) jsou zapsána (kódována) v podobě
+                <strong>posloupností čísel</strong> (bajtů) a uložena např. v operační paměti počítače nebo na
+                záznamovém médiu (pevný disk, CD, paměťová karta apod.). Stejným způsobem je v paměti vedle dat uložen i
+                sled instrukcí tvořící počítačový program, který určuje, jak má počítač data zpracovávat.</p>
+                        
+                <figure>
+                    <img src="gif/uiia-cat-uiia.gif" alt="kockaaa" width="600" height="400" class="spin">
+                </figure>
+
+                <section class="grid-menu">
+                <div class="card">
+                    <h2>1. Historie</h2>
+                    <p>Historie počítačů.</p>
+                    <a href="historie.html">Číst více</a>
+                </div>
+                <div class="card">
+                    <h2>2. Hardware</h2>
+                    <p>Fyzické komponenty.</p>
+                    <a href="hardware.html">Číst více</a>
+                </div>
+                <div class="card">
+                    <h2>3. Software</h2>
+                    <p>Programy a aplíkace.</p>
+                    <a href="software.html">Číst více</a>
+                </div>
+                <div class="card">
+                    <h2>4. Sítě</h2>
+                    <p>Internet a komunikace.</p>
+                    <a href="site.html">Číst více</a>
+                </div>
+                <div class="card">
+                    <h2>5. AI</h2>
+                    <p>Umělá inteligence.</p>
+                    <a href="ai.html">Číst více</a>
+                </div>
+                <div class="card">
+                    <h2>6. Superpočítač</h2>
+                    <p>Hodně výkonný počítač</p>
+                    <a href="super.html">Číst více</a>
+                </div>
+            </section>
+            <aside class="external-links">
+                <h3>Zdroje:</h3>
+                <ul>
+                    <li>
+                        <a href="https://cs.wikipedia.org/wiki/Po%C4%8D%C3%ADta%C4%8Dov%C3%BD_program"
+                            target="_blank">Wikipedie: Počítačový program</a>
+                    </li>
+                    <li>
+                        <a href="https://cs.wikipedia.org/wiki/Data_(informatika)" target="_blank">Wikipedie: Data
+                            (informatika)</a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2026 Josef Šumšal | IT1 </p>
+        <a href="img/cetdzipiti"></a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

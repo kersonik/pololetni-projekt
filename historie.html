@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">&#9776; Menu</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="historie.html" class="active">1. Historie</a></li>
+                    <li><a href="hardware.html">2. Hardware</a></li>
+                    <li><a href="software.html">3. Software</a></li>
+                    <li><a href="site.html">4. Sítě</a></li>
+                    <li><a href="ai.html">5. AI</a></li>
+                    <li><a href="super.html">6. Superpočítač</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>Kapitola 1: Historie počítačů</h1>
+            <p>Dějiny počítačů zahrnují vývoj jak samotného hardware, tak jeho architektury a mají přímý vliv na
+                vývoj softwaru. První číslicové počítače byly vyrobeny ve 30. letech 20. století, avšak za jejich
+                vynálezce je přesto považován Charles Babbage, který již v 19. století vymyslel základní principy
+                fungování stroje pro řešení složitých výpočtů. Počítačů stále přibývá, jejich výkon roste a postupně
+                zasahují do nejrůznějších oblastí lidského života.</p>
+
+            <figure>
+                <img src="img/ilustrace.jpg" alt="Starý počítač" width="600" height="400">
+            </figure>
+
+
+            <h2>Mechanické počátky (19. století)</h2>
+            <ul>
+                <li><strong>Herman Hollerith:</strong> Využil děrné štítky pro sčítání lidu v USA (1890), jeho firma
+                    se později stala základem IBM.</li>
+            </ul>
+
+            <h2>Nultá generace (cca 1934–1945)</h2>
+            <ul>
+                <li><strong>Technologie:</strong> Elektromechanická relé, pomalé (cca 100 operací/s), hlučné.</li>
+                <li><strong>Z3 (Německo):</strong> Konrad Zuse sestrojil první funkční, programovatelný stroj
+                    (používal už dvojkovou soustavu).</li>
+                <li><strong>Colossus (UK):</strong> Elektronkový stroj pro lámání německých šifer (Lorenz) v
+                    Bletchley Park.</li>
+                <li><strong>Mark I (USA):</strong> Obří kalkulátor financovaný IBM pro námořnictvo.</li>
+            </ul>
+
+            <h2>První generace (1945–1950)</h2>
+            <ul>
+                <li><strong>Technologie:</strong> Vakuové elektronky. Obrovská spotřeba energie, časté poruchy,
+                    nulový OS (programování přepojováním kabelů).</li>
+                <li><strong>ENIAC:</strong> První plně elektronický univerzální počítač. Rychlý, ale náročný na
+                    provoz.</li>
+                <li><strong>Československo:</strong> Počítač SAPO (obsahoval relé i elektronky, měl 3 procesory,
+                    které se kontrolovaly hlasováním). Shořel kvůli oleji z relé.</li>
+            </ul>
+
+            <h2>Druhá generace (1951–1964)</h2>
+            <ul>
+                <li><strong>Technologie:</strong> Tranzistory. Zmenšení rozměrů, vyšší spolehlivost, nižší spotřeba.
+                </li>
+                <li><strong>Pokrok:</strong> První operační systémy, dávkové zpracování a jazyky (FORTRAN, COBOL).
+                </li>
+                <li><strong>Stroje:</strong> UNIVAC (komerční úspěch), československý EPOS (později ZPA 600).</li>
+            </ul>
+
+            <h2>Třetí generace (1965–1980)</h2>
+            <ul>
+                <li><strong>Technologie:</strong> Integrované obvody (čipy).</li>
+                <li><strong>Vlastnosti:</strong> Multitasking (více úloh najednou), sálové počítače (mainframe).
+                </li>
+                <li><strong>Stroje:</strong> Legendární IBM System 360 (standardizace HW a SW), superpočítače Cray.
+                </li>
+            </ul>
+
+            <h2>Čtvrtá generace (1981–současnost)</h2>
+            <ul>
+                <li><strong>Technologie:</strong> Mikroprocesor (CPU na jednom čipu).</li>
+                <li><strong>Vlastnosti:</strong> Osobní počítače (PC), grafické rozhraní, internet, miniaturizace.
+                </li>
+                <li><strong>Milník:</strong> 1981 uveden IBM PC (otevřená architektura, vznik "IBM kompatibilních"
+                    PC).</li>
+            </ul>
+
+
+
+            <aside class="external-links">
+                <h3>Zdroje:</h3>
+                <ul>
+                    <li>
+                        <a href="https://cs.wikipedia.org/wiki/D%C4%9Bjiny_po%C4%8D%C3%ADta%C4%8D%C5%AF"
+                            target="_blank">Wikipedie: Dějiny počítačů</a>
+                    </li>
+                </ul>
+            </aside>
+
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2026 Josef Šumšal | IT1 </p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

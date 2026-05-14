@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sítě</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">&#9776; Menu</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="historie.html">1. Historie</a></li>
+                    <li><a href="hardware.html">2. Hardware</a></li>
+                    <li><a href="software.html">3. Software</a></li>
+                    <li><a href="site.html" class="active">4. Sítě</a></li>
+                    <li><a href="ai.html">5. AI</a></li>
+                    <li><a href="super.html">6. Superpočítač</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>Kapitola 4: Počítačové sítě</h1>
+            <p>Počítačová síť (computer network) je v informatice označení pro technické prostředky, které realizují
+                spojení a výměnu informací mezi počítači. Umožňují tak uživatelům komunikaci podle určitých pravidel, za
+                účelem sdílení využívání společných zdrojů nebo výměny zpráv..</p>
+
+            <figure>
+                <img src="img/site.jpg" alt="Serverovna a kabely" width="600">
+                <figcaption>Školní web hosting.</figcaption>
+            </figure>
+
+            <h2>Síťová architektura</h2>
+            <ul>
+                <li><strong>Síťová architektura:</strong> struktura řízení komunikace rozdělená do vrstev, kde každá
+                    vrstva poskytuje služby té vyšší a komunikace je řízena protokoly.</li>
+                <li><strong>Standardizace:</strong> vychází z referenčního modelu OSI (Open Systems Architecture),
+                    přičemž praktickou realizací je dnes nejpoužívanější sada protokolů TCP/IP.</li>
+            </ul>
+
+            <h2>Dělení sítí podle přepojování</h2>
+            <ul>
+                <li><strong>Komutační síť:</strong> starší technologie založená na přepojování okruhů, typická pro
+                    telefonní sítě a ISDN.</li>
+                <li><strong>Paketová síť:</strong> data jsou dělena na pakety, které putují sítí nezávisle různými
+                    trasami (např. Ethernet, ATM); cílová cesta není předem známa.</li>
+            </ul>
+
+            <h2>Dělení podle postavení uzlů</h2>
+
+            <ul>
+                <li><strong>Peer-to-peer (P2P):</strong> architektura „rovný s rovným“, kde jsou si všechny počítače
+                    rovnocenné a neexistuje centrální správa.</li>
+                <li><strong>Klient–server:</strong> hierarchické uspořádání, kde nadřazený server poskytuje služby a
+                    zdroje podřízeným klientům (pracovním stanicím).</li>
+            </ul>
+
+            <h2>Dělení sítí podle signálu</h2>
+            <ul>
+                <li><strong>Analogová síť:</strong> pracuje se spojitým proměnným signálem, je náchylnější k rušení.
+                </li>
+                <li><strong>Digitální síť:</strong> využívá diskrétní stavy (obvykle nuly a jedničky), což umožňuje
+                    snadnější ukládání dat a udržení kvality bez degradace.</li>
+            </ul>
+
+            <h2>Dělení sítí podle rozlehlosti</h2>
+            <ul>
+                <li><strong>PAN (Personal Area Network):</strong> osobní síť s nejmenším dosahem (metry), propojuje
+                    osobní zařízení (Bluetooth, IrDA).</li>
+                <li><strong>LAN (Local Area Network):</strong> lokální síť v rámci jedné či několika blízkých budov
+                    (nejčastěji Ethernet).</li>
+                <li><strong>MAN (Metropolitan Area Network):</strong> metropolitní síť propojující lokální sítě v rámci
+                    města.</li>
+                <li><strong>WAN (Wide Area Network):</strong> rozlehlá síť spojující LAN a MAN sítě napříč státy,
+                    kontinenty či celou planetou.</li>
+            </ul>
+
+            <aside class="external-links">
+                <h3>Zdroje:</h3>
+                <a href="https://cs.wikipedia.org/wiki/Po%C4%8D%C3%ADta%C4%8Dov%C3%A1_s%C3%AD%C5%A5"
+                    target="_blank">Wikipedie: Počítačové sítě</a>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Josef Šumšal | IT1 </p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
